@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynkeby Kundeservice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .send {
+        margin:  auto;
+        height: 50px;
+        width: 80px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--dark-green);
+        color: white;
+    }
+    .chat-container {
+        height: 100vh;
+    }
+    .chat-info {
+        text-align: center;
+        color: var(--dark-green);
+        font-weight: 800;;
+    }
+</style>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+                <nav>
+                    <ul>
+                       <img class="sidebar-logo" src="https://a.storyblok.com/f/243238/250x162/754688b428/250x0.webp/m/1800x0" alt="">
+                        <li><a href="home.html">Hjem</a></li>
+                        <li><a href="faktura.html">Fakturaer</a></li>
+                        <li><a href="kundeservice.html">Kundeservice</a></li>
+                    </ul>
+                </nav>
+                <div class="profile">
+                    <p id="username"></p>
+                    <button onclick="logout()" class="logout-button">Log ud</button>
+                </div>
+        </aside>
+
+        <main class="content">
+            <div class="chat-container" style="padding: 10px; background-color: #F5F5DC;">
+                <p class="chat-info">Du snakker med Karoline fra Rynkeby</p>
+                <div class="chat-messages" id="chatMessages" style="background-color: #F5F5DC;"></div>
+                <div class="chat-input" style="display: flex; flex-direction: row; gap: 10px;">
+                    <input type="text" id="messageInput" placeholder="Skriv din besked...">
+                    <button onclick="sendMessage()" class="send">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

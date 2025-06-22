@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynkeby Fakturaer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <img class="sidebar-logo" src="https://a.storyblok.com/f/243238/250x162/754688b428/250x0.webp/m/1800x0" alt="">
+                        <li><a href="home.html">Hjem</a></li>
+                        <li><a href="faktura.html">Fakturaer</a></li>
+                        <li><a href="kundeservice.html">Kundeservice</a></li>
+                    </ul>
+                </nav>
+                <div class="profile">
+                    <p id="username"></p>
+                    <button onclick="logout()" class="logout-button">Log ud</button>
+                </div>
+        </aside>
+
+        <div class="content" style="margin-left: 30%;">
+            <h2>Ordrehistorik</h2>
+            <div class="invoice-list" id="invoiceList">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

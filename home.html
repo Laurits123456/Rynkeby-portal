@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynkeby Produkter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <img class="sidebar-logo" src="https://a.storyblok.com/f/243238/250x162/754688b428/250x0.webp/m/1800x0" alt="">
+                    <li><a href="home.html">Hjem</a></li>
+                    <li><a href="faktura.html">Fakturaer</a></li>
+                    <li><a href="kundeservice.html">Kundeservice</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <p id="username"></p>
+                <button onclick="logout()" class="logout-button">Log ud</button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒 <span id="cartCount">0</span>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <div class="product-card">
+                    <img src="https://frugtkurven.dk/img/v5VQ6yE.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://sweetspot.me/wp-content/uploads/2025/01/42947-300x300.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://frugtkurven.dk/img/v5VQ6yE.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://frugtkurven.dk/img/v5VQ6yE.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://frugtkurven.dk/img/v5VQ6yE.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://frugtkurven.dk/img/v5VQ6yE.png" alt="Multijuice">
+                    <h3>Multijuice</h3>
+                    <p>15 kr</p>
+                    <button onclick="addToCart(1)">Tilføj til kurv</button>
+                </div>
+            </div>
+            
+            <div class="cart-modal" id="cartModal">
+                <div class="cart-content">
+                    <h3>Indkøbskurv</h3>
+                    <div id="cartItems"></div>
+                    <button onclick="checkout()">Bestil nu</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
